@@ -1,6 +1,7 @@
 import {
 	UPDATE_CURRENT_NUMBER,
-	UPDATE_CURRENT_OPERATOR
+	UPDATE_CURRENT_OPERATOR,
+	DELETE_CURRENT_NUMBER
 } from '../actions/index';
 
 const initialState = {
@@ -41,6 +42,12 @@ const reducer = (state = initialState, action) => {
 				result: newResult,
 				currentOperand: 0,
 				currentOperator: action.operator
+			};
+		case DELETE_CURRENT_NUMBER:
+			return {
+				...state,
+				currentOperand: 0,
+				display: '0'
 			};
 		default:
 			return state;

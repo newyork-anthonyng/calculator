@@ -14,6 +14,7 @@ describe('CalculatorButtons', () => {
 			<CalculatorButtons
 				handleNumberPress={() => {}}
 				handleOperatorPress={() => {}}
+				handleDeletePress={() => {}}
 			/>
 		);
 
@@ -26,6 +27,7 @@ describe('CalculatorButtons', () => {
 			<CalculatorButtons
 				handleNumberPress={() => {}}
 				handleOperatorPress={() => {}}
+				handleDeletePress={() => {}}
 			/>
 		);
 
@@ -38,11 +40,12 @@ describe('CalculatorButtons', () => {
 			<CalculatorButtons
 				handleNumberPress={() => {}}
 				handleOperatorPress={() => {}}
+				handleDeletePress={() => {}}
 			/>
 		);
 
 		const operatorButtons = wrapper.find(OperatorButton);
-		expect(operatorButtons.length).toEqual(5);
+		expect(operatorButtons.length).toEqual(6);
 	});
 
 	it('should run callback when number button is pressed', () => {
@@ -51,6 +54,7 @@ describe('CalculatorButtons', () => {
 			<CalculatorButtons
 				handleNumberPress={cb}
 				handleOperatorPress={() => {}}
+				handleDeletePress={() => {}}
 			/>
 		);
 
@@ -65,11 +69,27 @@ describe('CalculatorButtons', () => {
 			<CalculatorButtons
 				handleNumberPress={() => {}}
 				handleOperatorPress={cb}
+				handleDeletePress={() => {}}
 			/>
 		);
 
-		const divideButton = wrapper.find(OperatorButton).at(0);
+		const divideButton = wrapper.find(OperatorButton).at(1);
 		divideButton.simulate('click');
 		expect(cb.mock.calls[0][0]).toEqual('/');
+	});
+
+	it('should run callback when delete button is pressed', () => {
+		const cb = jest.fn();
+		const wrapper = mount(
+			<CalculatorButtons
+				handleNumberPress={() => {}}
+				handleOperatorPress={() => {}}
+				handleDeletePress={cb}
+			/>
+		);
+
+		const deleteButton = wrapper.find(OperatorButton).at(0);
+		deleteButton.simulate('click');
+		expect(cb.mock.calls[0][0]).toEqual('Delete');
 	});
 });

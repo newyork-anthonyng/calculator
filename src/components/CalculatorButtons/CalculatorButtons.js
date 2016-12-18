@@ -3,9 +3,12 @@ import NumberButton from '../NumberButton/NumberButton';
 import OperatorButton from '../OperatorButton/OperatorButton';
 import './CalculatorButtons.css';
 
-const CalculatorButtons = ({ handleNumberPress, handleOperatorPress }) => {
+const CalculatorButtons = ({ handleNumberPress, handleOperatorPress, handleDeletePress }) => {
 	return (
 		<div className="Calculator_Buttons">
+			<div className="Calculator_Buttons_Row">
+				<OperatorButton text="Delete" onClick={handleDeletePress} />
+			</div>
 			<div className="Calculator_Buttons_Row">
 				<NumberButton text="7" onClick={handleNumberPress} />
 				<NumberButton text="8" onClick={handleNumberPress} />
@@ -35,7 +38,8 @@ const CalculatorButtons = ({ handleNumberPress, handleOperatorPress }) => {
 
 CalculatorButtons.propTypes = {
 	handleNumberPress: PropTypes.func.isRequired,
-	handleOperatorPress: PropTypes.func.isRequired
+	handleOperatorPress: PropTypes.func.isRequired,
+	handleDeletePress: PropTypes.func.isRequired
 };
 
 export default CalculatorButtons;

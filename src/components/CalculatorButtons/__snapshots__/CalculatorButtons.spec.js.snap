@@ -8,6 +8,19 @@ exports[`CalculatorButtons should render 1`] = `
       onClick={[Function]}
       style={
         Object {
+          "backgroundColor": "#202020",
+        }
+      }>
+      Delete
+    </div>
+  </div>
+  <div
+    className="Calculator_Buttons_Row">
+    <div
+      className="Button"
+      onClick={[Function]}
+      style={
+        Object {
           "backgroundColor": "#434542",
         }
       }>

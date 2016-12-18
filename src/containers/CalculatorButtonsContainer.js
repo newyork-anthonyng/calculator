@@ -1,6 +1,7 @@
 import {
 	updateCurrentNumber,
-	updateCurrentOperator
+	updateCurrentOperator,
+	deleteCurrentNumber
 } from '../actions/index';
 import CalculatorButtons from '../components/CalculatorButtons/CalculatorButtons';
 import { connect } from 'react-redux';
@@ -12,6 +13,9 @@ const mapDispatchToProps = (dispatch) => {
 		},
 		handleOperatorPress: (operator) => {
 			dispatch(updateCurrentOperator(operator));
+		},
+		handleDeletePress: () => {
+			dispatch(deleteCurrentNumber());
 		}
 	};
 };
