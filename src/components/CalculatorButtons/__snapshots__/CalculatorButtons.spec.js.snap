@@ -1,0 +1,167 @@
+exports[`CalculatorButtons should render 1`] = `
+<div
+  className="Calculator_Buttons">
+  <div
+    className="Calculator_Buttons_Row">
+    <div
+      className="Button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#434542",
+        }
+      }>
+      7
+    </div>
+    <div
+      className="Button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#434542",
+        }
+      }>
+      8
+    </div>
+    <div
+      className="Button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#434542",
+        }
+      }>
+      9
+    </div>
+    <div
+      className="Button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#202020",
+        }
+      }>
+      /
+    </div>
+  </div>
+  <div
+    className="Calculator_Buttons_Row">
+    <div
+      className="Button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#434542",
+        }
+      }>
+      4
+    </div>
+    <div
+      className="Button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#434542",
+        }
+      }>
+      5
+    </div>
+    <div
+      className="Button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#434542",
+        }
+      }>
+      6
+    </div>
+    <div
+      className="Button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#202020",
+        }
+      }>
+      x
+    </div>
+  </div>
+  <div
+    className="Calculator_Buttons_Row">
+    <div
+      className="Button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#434542",
+        }
+      }>
+      1
+    </div>
+    <div
+      className="Button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#434542",
+        }
+      }>
+      2
+    </div>
+    <div
+      className="Button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#434542",
+        }
+      }>
+      3
+    </div>
+    <div
+      className="Button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#202020",
+        }
+      }>
+      -
+    </div>
+  </div>
+  <div
+    className="Calculator_Buttons_Row">
+    <div
+      className="Button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#434542",
+        }
+      }>
+      0
+    </div>
+    <div
+      className="Button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#202020",
+        }
+      }>
+      =
+    </div>
+    <div
+      className="Button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#202020",
+        }
+      }>
+      +
+    </div>
+  </div>
+</div>
+`;
