@@ -1,7 +1,6 @@
 import {
 	UPDATE_CURRENT_NUMBER,
-	UPDATE_CURRENT_OPERATOR,
-	CALCULATE_RESULT
+	UPDATE_CURRENT_OPERATOR
 } from '../actions/index';
 
 const initialState = {
@@ -26,24 +25,22 @@ const calculateResult = (firstOperand, secondOperand, operator) => {
 const reducer = (state = initialState, action) => {
 	switch(action.type) {
 		case UPDATE_CURRENT_NUMBER:
+			const newNumber = '' + state.currentOperand + action.number;
+
 			return {
 				...state,
-				currentOperand: action.number,
-				display: '' + action.number
+				currentOperand: newNumber,
+				display: newNumber
 			};
 		case UPDATE_CURRENT_OPERATOR:
 			const newResult = calculateResult(state.result, state.currentOperand, state.currentOperator);
-			const newDisplay = action.operator === '=' ? '' + newResult : state.display;
+			const newDisplay = '' + newResult;
 
 			return {
 				display: newDisplay,
 				result: newResult,
 				currentOperand: 0,
 				currentOperator: action.operator
-			};
-		case CALCULATE_RESULT:
-			return {
-				...state,
 			};
 		default:
 			return state;
