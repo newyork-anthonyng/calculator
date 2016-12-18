@@ -32,7 +32,7 @@ describe('CalculatorButtons', () => {
 		);
 
 		const numberButtons = wrapper.find(NumberButton);
-		expect(numberButtons.length).toEqual(10);
+		expect(numberButtons.length).toEqual(11);
 	});
 
 	it('should render operator buttons', () => {

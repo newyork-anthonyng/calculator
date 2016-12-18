@@ -2,7 +2,12 @@ exports[`CalculatorButtons should render 1`] = `
 <div
   className="Calculator_Buttons">
   <div
-    className="Calculator_Buttons_Row">
+    className="Calculator_Buttons_Row"
+    style={
+      Object {
+        "justifyContent": "flex-end",
+      }
+    }>
     <div
       className="Button"
       onClick={[Function]}
@@ -145,6 +150,16 @@ exports[`CalculatorButtons should render 1`] = `
   </div>
   <div
     className="Calculator_Buttons_Row">
+    <div
+      className="Button"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#434542",
+        }
+      }>
+      .
+    </div>
     <div
       className="Button"
       onClick={[Function]}
