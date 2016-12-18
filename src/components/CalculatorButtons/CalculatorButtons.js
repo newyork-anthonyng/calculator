@@ -6,7 +6,7 @@ import './CalculatorButtons.css';
 const CalculatorButtons = ({ handleNumberPress, handleOperatorPress, handleDeletePress }) => {
 	return (
 		<div className="Calculator_Buttons">
-			<div className="Calculator_Buttons_Row">
+			<div style={{ justifyContent: 'flex-end' }} className="Calculator_Buttons_Row">
 				<OperatorButton text="Delete" onClick={handleDeletePress} />
 			</div>
 			<div className="Calculator_Buttons_Row">
@@ -28,6 +28,7 @@ const CalculatorButtons = ({ handleNumberPress, handleOperatorPress, handleDelet
 				<OperatorButton text="-" onClick={handleOperatorPress} />
 			</div>
 			<div className="Calculator_Buttons_Row">
+				<NumberButton text="." onClick={handleNumberPress} />
 				<NumberButton text="0" onClick={handleNumberPress} />
 				<OperatorButton text="=" onClick={handleOperatorPress} />
 				<OperatorButton text="+" onClick={handleOperatorPress} />

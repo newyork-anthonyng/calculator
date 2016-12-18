@@ -19,7 +19,8 @@ const calculateResult = (firstOperand, secondOperand, operator) => {
 		case '/': return parseInt(firstOperand, 10) / parseInt(secondOperand, 10);
 		case '=':
 		default:
-			return parseInt(firstOperand === '0' ? secondOperand : firstOperand, 10);
+			
+			return parseInt(firstOperand == '0' ? secondOperand : firstOperand, 10);
 	}
 }
 

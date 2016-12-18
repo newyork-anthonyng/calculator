@@ -1,6 +1,7 @@
 import React from 'react';
 import CalculatorDisplayContainer from '../../containers/CalculatorDisplayContainer';
 import CalculatorButtonsContainer from '../../containers/CalculatorButtonsContainer';
+import './Calculator.css';
 
 class Calculator extends React.Component {
 	render() {
