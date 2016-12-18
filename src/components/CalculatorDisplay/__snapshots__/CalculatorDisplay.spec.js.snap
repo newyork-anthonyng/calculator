@@ -1,0 +1,8 @@
+exports[`CalculatorDisplay should render 1`] = `
+<div
+  className="Calculator_Display">
+  <span>
+    178
+  </span>
+</div>
+`;
